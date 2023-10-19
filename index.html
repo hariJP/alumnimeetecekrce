@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom Variables */
+
+        :root {
+            --color-white: #f3f3f3;
+            --btn: #37af65;
+            --font: 'Poppins', sans-serif;
+        }
+
+        /* Reset */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font);
+            color: var(--color-white);
+            padding: 20px;
+        }
+
+        /* Background based on device */
+        @media (min-width: 600px) {
+            body {
+                background: rgba(51, 51, 90, 0.8) url('https://cdn.wallpapersafari.com/43/48/9Rabej.jpg') no-repeat center center;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+        }
+
+        @media (max-width: 599px) {
+            body {
+                background: #1b1b32 url('') no-repeat center center;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            opacity: 0.9;
+        }
+
+        /* Rest of your styles remain unchanged */
+        /* ... */
+
+    </style>
+    <title>ECE KRCE</title>
+</head>
+
+<body>
+<form action="https://docs.google.com/forms/d/e/1FAIpQLScy10FcU8EYvSH-Rtia7zMGoamg5-xdc9cZiW1ancMwXtla4Q/formResponse">
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="title text-center">ALUMNI DETAILS FORM</h1>
+            <p id="description" class="description text-center">
+                <b>REGARDING ALUMNI MEET 2023 <br> 
+                CONDUCTED BY DEPARTMENT OF ECE <br>
+                K RAMAKRISHNAN COLLEGE OF ENGINEERING</b>
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="entry.1921480056">Name</label>
+                <input type="text" name="entry.1921480056" id="name" class="form-control" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="entry.1760091979">Register Number<span class="clue"></span></label>
+                <input type="text" name="entry.1760091979" id="number" min="10" max="99" class="form-control" placeholder="Enter your Register Number" />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="entry.49732914">Email</label>
+                <input type="email" name="entry.49732914" id="email" class="form-control" placeholder="Enter your Email" required />
+           </div>
+            <div class="form-group">
+                <label id="number-label" for="entry.1319639133">Contact Number<span class="clue"></span></label>
+                <input type="text" name="entry.1319639133" id="number" min="10" max="99" class="form-control" placeholder="Enter your Contact Number" />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="entry.419138142">Passed Out Year<span class="clue"></span></label>
+                <input type="text" name="entry.419138142" id="number" min="10" max="99" class="form-control" placeholder="Enter your Passed Out Year" />
+            </div>
+                 <div class="form-group">
+                <p>Address</p>
+                <textarea id="comments" class="input-textarea" name="entry.1295676879"
+                    placeholder="Enter your address here..."></textarea>
+            </div>
+                 <div class="form-group">
+                <label id="address-label" for="entry.1683532288">Whether Willing To Attend Alumni Meet</label>
+                <input type="text" name="entry.1683532288" id="name" class="form-control" placeholder="Yes/No" required />
+            </div>
+            <div class="form-group">
+                <p>If No, Reason</p>
+                <textarea id="comments" class="input-textarea" name="entry.1355658473"
+                    placeholder="Enter your reason here..."></textarea>
+            </div>
+            
+           
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    
+</body>
+
+</html>
