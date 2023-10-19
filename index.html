@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <style>
         /* Custom Variables */
-
         :root {
             --color-white: #f3f3f3;
             --btn: #37af65;
@@ -17,7 +15,6 @@
         }
 
         /* Reset */
-
         * {
             margin: 0;
             padding: 0;
@@ -61,69 +58,138 @@
             opacity: 0.9;
         }
 
-        /* Rest of your styles remain unchanged */
-        /* ... */
+        .form-group {
+            margin: 10px 0;
+        }
+
+        /* Style for BATCH section */
+        .batch-label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .batch-checkbox {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        /* Adjusted alignment */
+        .batch-year {
+            display: inline-block;
+            margin-right: 10px;
+        }
 
     </style>
     <title>ECE KRCE</title>
 </head>
 
 <body>
-<form action="https://docs.google.com/forms/d/e/1FAIpQLScy10FcU8EYvSH-Rtia7zMGoamg5-xdc9cZiW1ancMwXtla4Q/formResponse">
-    <div class="container">
-        <header class="header">
-            <h1 id="title" class="title text-center">ALUMNI DETAILS FORM</h1>
-            <p id="description" class="description text-center">
-                <b>REGARDING ALUMNI MEET 2023 <br> 
-                CONDUCTED BY DEPARTMENT OF ECE <br>
-                K RAMAKRISHNAN COLLEGE OF ENGINEERING</b>
-            </p>
-        </header>
-        <form id="survey-form">
-            <div class="form-group">
-                <label id="name-label" for="entry.1921480056">Name</label>
-                <input type="text" name="entry.1921480056" id="name" class="form-control" placeholder="Enter your name" required />
-            </div>
-            <div class="form-group">
-                <label id="number-label" for="entry.1760091979">Register Number<span class="clue"></span></label>
-                <input type="text" name="entry.1760091979" id="number" min="10" max="99" class="form-control" placeholder="Enter your Register Number" />
-            </div>
-            <div class="form-group">
-                <label id="email-label" for="entry.49732914">Email</label>
-                <input type="email" name="entry.49732914" id="email" class="form-control" placeholder="Enter your Email" required />
-           </div>
-            <div class="form-group">
-                <label id="number-label" for="entry.1319639133">Contact Number<span class="clue"></span></label>
-                <input type="text" name="entry.1319639133" id="number" min="10" max="99" class="form-control" placeholder="Enter your Contact Number" />
-            </div>
-            <div class="form-group">
-                <label id="number-label" for="entry.419138142">Passed Out Year<span class="clue"></span></label>
-                <input type="text" name="entry.419138142" id="number" min="10" max="99" class="form-control" placeholder="Enter your Passed Out Year" />
-            </div>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLScy10FcU8EYvSH-Rtia7zMGoamg5-xdc9cZiW1ancMwXtla4Q/formResponse">
+        <div class="container">
+            <header class="header">
+                <!-- Your header content remains the same -->
+            </header>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="entry.1921480056">Name</label>
+                    <input type="text" name="entry.1921480056" id="name" class="form-control" placeholder="Enter your name" required />
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="entry.1760091979">Register Number<span class="clue"></span></label>
+                    <input type="text" name="entry.1760091979" id="number" min="10" max="99" class="form-control" placeholder="Enter your Register Number" />
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="entry.49732914">Email</label>
+                    <input type="email" name="entry.49732914" id="email" class="form-control" placeholder="Enter your Email" required />
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="entry.1319639133">Contact Number<span class="clue"></span></label>
+                    <input type="text" name="entry.1319639133" id="number" min="10" max="99" class="form-control" placeholder="Enter your Contact Number" />
+                </div>
                  <div class="form-group">
                 <p>Address</p>
                 <textarea id="comments" class="input-textarea" name="entry.1295676879"
                     placeholder="Enter your address here..."></textarea>
             </div>
-                 <div class="form-group">
-                <label id="address-label" for="entry.1683532288">Whether Willing To Attend Alumni Meet</label>
-                <input type="text" name="entry.1683532288" id="name" class="form-control" placeholder="Yes/No" required />
-            </div>
-            <div class="form-group">
-                <p>If No, Reason</p>
-                <textarea id="comments" class="input-textarea" name="entry.1355658473"
-                    placeholder="Enter your reason here..."></textarea>
-            </div>
-            
-           
-
-            <div class="form-group">
-                <button type="submit" id="submit" class="submit-button">Submit</button>
-            </div>
-        </form>
+                <div class="form-group">
+    <label class="batch-label">BATCH</label>
+    <div class="batch-year-radio">
+        <label for="entry.823613099">
+            <input type="radio" name="entry.823613099" value="2008-2012" id="batch-2008-2012" class="batch-radio" />
+            2008-2012
+        </label>
     </div>
+    <div class="batch-year-radio">
+        <label for="entry.823613099">
+            <input type="radio" name="entry.823613099" value="2009-2013" id="batch-2009-2013" class="batch-radio" />
+            2009-2013
+        </label>
+    </div>
+    <div class="batch-year-radio">
+        <label for="entry.823613099">
+            <input type="radio" name="entry.823613099" value="2010-2014" id="batch-2010-2014" class="batch-radio" />
+            2010-2014
+        </label>
+    </div>
+    <div class="batch-year-radio">
+        <label for="entry.823613099">
+            <input type="radio" name="entry.823613099" value="2011-2015" id="batch-2011-2015" class="batch-radio" />
+            2011-2015
+        </label>
+    </div>
+    <div class="batch-year-radio">
+        <label for="entry.823613099">
+            <input type="radio" name="entry.823613099" value="2012-2016" id="batch-2012-2016" class="batch-radio" />
+            2012-2016
+        </label>
+    </div>
+    <div class "batch-year-radio">
+        <label for="entry.823613099">
+            <input type="radio" name="entry.823613099" value="2013-2017" id="batch-2013-2017" class="batch-radio" />
+            2013-2017
+        </label>
+    </div>
+    <div class="batch-year-radio">
+        <label for="entry.823613099">
+            <input type="radio" name="entry.823613099" value="2014-2018" id="batch-2014-2018" class="batch-radio" />
+            2014-2018
+        </label>
+    </div>
+    <div class="batch-year-radio">
+        <label for="entry.823613099">
+            <input type="radio" name="entry.823613099" value="2015-2019" id="batch-2015-2019" class="batch-radio" />
+            2015-2019
+        </label>
+    </div>
+    <div class="batch-year-radio">
+        <label for="entry.823613099">
+            <input type="radio" name="entry.823613099" value="2016-2020" id="batch-2016-2020" class="batch-radio" />
+            2016-2020
+        </label>
+    </div>
+</div>
 
-    
+
+
+                <div class="form-group">
+                    <label id="number-label" for="entry.419138142">Passed Out Year<span class="clue"></span></label>
+                    <input type="text" name="entry.419138142" id="number" min="10" max="99" class="form-control" placeholder="Enter your Passed Out Year" />
+                </div>
+                <div class="form-group">
+                    <label id="address-label" for="entry.1683532288">Whether Willing To Attend Alumni Meet</label>
+                    <input type="text" name="entry.1683532288" id="name" class="form-control" placeholder="Yes/No" required />
+                </div>
+                <div class="form-group">
+                    <p>If No, Reason</p>
+                    <textarea id="comments" class="input-textarea" name="entry.1355658473" placeholder="Enter your reason here..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </form>
 </body>
 
 </html>
